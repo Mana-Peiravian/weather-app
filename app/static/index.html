@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App – Tech Assessment</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Weather App – by <span id="devName">Mana Peiravian</span></h1>
+    <div class="actions">
+      <button id="infoBtn" class="btn">PM Accelerator</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Find Weather</h2>
+      <form id="searchForm" class="grid">
+        <input id="q" name="q" placeholder="City, postal code, landmark…" />
+        <button class="btn" type="submit">Search</button>
+        <button class="btn" type="button" id="useGps">Use My Location</button>
+      </form>
+      <div id="current" class="stack"></div>
+      <div id="forecast" class="forecast"></div>
+    </section>
+
+    <section class="card">
+      <h2>Save a Range (CRUD)</h2>
+      <form id="saveForm" class="grid">
+        <input id="saveLocation" placeholder="Location to save" />
+        <input id="from" type="date" />
+        <input id="to" type="date" />
+        <button class="btn" type="submit">Create</button>
+      </form>
+      <div id="list" class="stack"></div>
+    </section>
+  </main>
+
+  <footer class="footer">Tip: Check sunrise/sunset & precip to plan flights/drives.</footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
