@@ -35,6 +35,5 @@ http://localhost:8000
 ## Notes
 - Forecast horizon uses Open‑Meteo up to 16 days. Historical API is omitted for brevity.
 - The UI is intentionally minimal; a designer can skin it later.
-- Add your name in **app/static/index.html** (`YOUR_NAME_HERE`).
-
 ---
+
